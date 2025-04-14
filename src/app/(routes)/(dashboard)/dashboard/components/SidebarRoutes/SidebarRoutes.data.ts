@@ -1,4 +1,4 @@
-import { Calendar, Car, Heart } from "lucide-react";
+import { Briefcase, Calendar, Car, Heart, Inbox } from "lucide-react";
 
 export const dataGeneralSidebar = [
     {
@@ -17,3 +17,16 @@ export const dataGeneralSidebar = [
         href: "/loved-cars"
     },
 ]
+
+export const dataAdminSidebar = [
+    {
+      icon: Briefcase,
+      label: "Manage your cars",
+      href: "/admin/manage-cars"
+    },
+    {
+      icon: Inbox,
+      label: "All reserves",
+      href: "/admin/all-reserves"
+    },
+  ]
