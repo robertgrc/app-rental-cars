@@ -2,6 +2,7 @@
 import { Separator } from "@/components/ui/separator"
 import { useAuth } from "@clerk/nextjs"
 import { dataGeneralSidebar } from "./SidebarRoutes.data"
+import { SidebarItem } from "./SidebarItem"
 
 
 export default function SidebarRoutes() {
@@ -14,7 +15,7 @@ export default function SidebarRoutes() {
             <div className="p-2 md:p-6">
                 <p className="mb-2 text-slate-500">General</p>
                 {dataGeneralSidebar.map((item)=>(
-                    <p>{item.label}</p>
+                    <SidebarItem key ={item.label} item={item}/>
                 ))}
             </div>
         </div>

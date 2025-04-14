@@ -1,5 +1,5 @@
 import LogoDashboard from "./dashboard/components/LogoDashboard/page";
-import SidebarRoutes from "./dashboard/components/SidebarRoutes/page";
+import SidebarRoutes from "./dashboard/components/SidebarRoutes/SidebarRoutes";
 
 
 export default function LayoutDashboard({children}:{children: React.ReactNode}) {
